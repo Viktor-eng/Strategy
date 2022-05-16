@@ -6,7 +6,20 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MallardDuck mallardDuck = new MallardDuck();
+            mallardDuck.Display();
+            Console.WriteLine();
+
+            RedHeadDuck redHeadDuck = new RedHeadDuck();
+            redHeadDuck.Display();
+            Console.WriteLine();
+
+            RubberDuck rubberDuck = new RubberDuck();
+            rubberDuck.Display();
+            Console.WriteLine();
+
+            DecoyDuck decoyDuck = new DecoyDuck();
+            decoyDuck.Display();
         }
     }
 }
