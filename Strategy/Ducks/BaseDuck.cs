@@ -36,5 +36,15 @@ namespace Strategy
         {
             _flyBehavior.Fly();
         }
+
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            _flyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            _quackBehavior = qb;
+        }
     }
 }
