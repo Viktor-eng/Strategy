@@ -6,22 +6,13 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    abstract class Duck
+    abstract class BaseDuck
     {
-        internal virtual void Quack()
-        {
-            Console.WriteLine("Кря-кря");
-        }
-
         internal void Swim()
         {
             Console.WriteLine("Я утка, я плыву");
         }
-        internal virtual void Fly()
-        {
-            Console.WriteLine("Я ЛЕЧУ, ЮХУУУ");
-        }
-
+        
         internal abstract void Display();
     }
 }

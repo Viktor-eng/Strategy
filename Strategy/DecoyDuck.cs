@@ -6,24 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    class DecoyDuck : Duck
+    class DecoyDuck : BaseDuck
     {
         internal override void Display()
         {
-            Quack();
             Swim();
             Console.WriteLine("Я деревянная утка");
-            Fly();
-        }
-
-        internal override void Fly()
-        {
-
-        }
-
-        internal override void Quack()
-        {
-            
         }
     }
 }

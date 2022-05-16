@@ -6,24 +6,17 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    class RubberDuck : Duck
+    class RubberDuck : BaseDuck, Quackable
     {
+        public void Quack()
+        {
+            Console.WriteLine("Пищу");
+        }
+
         internal override void Display()
         {
-            Quack();
             Swim();
             Console.WriteLine("Я резиновая утка");
-            Fly();
-        }
-
-        internal override void Fly()
-        {
-            
-        }
-
-        internal override void Quack()
-        {
-            Console.WriteLine("ПищУУуууу противным писком");
         }
     }
 }
