@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    interface Flyable
+    class FlyWithWings : IFlyBehavior
     {
-        void Fly();
+        public void Fly()
+        {
+            Console.WriteLine("Умею летать");
+        }
     }
 }

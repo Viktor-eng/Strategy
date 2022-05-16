@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    interface Quackable
+    internal interface IQuackBehavior
     {
         void Quack();
     }

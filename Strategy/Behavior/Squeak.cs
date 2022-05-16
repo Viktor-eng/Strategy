@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    abstract class BaseDuck
+    class Squeak : IQuackBehavior
     {
-        internal void Swim()
+        public void Quack()
         {
-            Console.WriteLine("Я утка, я плыву");
+            Console.WriteLine("Я ненастоящая утка и умею пищать");
         }
-        
-        internal abstract void Display();
     }
 }

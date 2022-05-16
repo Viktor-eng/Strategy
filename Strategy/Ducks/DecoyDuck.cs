@@ -8,9 +8,15 @@ namespace Strategy
 {
     class DecoyDuck : BaseDuck
     {
-        internal override void Display()
+        public DecoyDuck()
         {
-            Swim();
+            _flyBehavior = new FlyNoWay();
+            _quackBehavior = new MuteQuack();
+        }
+
+
+        protected override void DuckBehavior()
+        {
             Console.WriteLine("Я деревянная утка");
         }
     }
