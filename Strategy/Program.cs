@@ -8,6 +8,7 @@ namespace Strategy
         {
             MallardDuck mallardDuck = new MallardDuck();
             mallardDuck.Display();
+
             mallardDuck.SetFlyBehavior(new FlyNoWay());
             Console.WriteLine();
             mallardDuck.Display();
